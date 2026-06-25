@@ -41,7 +41,8 @@ body {
     flex-direction: column;
 }
 
-.sidebar-menus a , .sidebar-logout a{
+.sidebar-menus a,
+.sidebar-logout a {
     padding: 5% 8%;
     margin: 0.5rem 0;
     display: flex;
@@ -52,11 +53,13 @@ body {
     color: var(--whitecolor);
 }
 
-.sidebar-menus a ion-icon , .sidebar-logout a ion-icon{
+.sidebar-menus a ion-icon,
+.sidebar-logout a ion-icon {
     font-size: 20px;
 }
 
-.sidebar-menus a:hover, .sidebar-logout a:hover{
+.sidebar-menus a:hover,
+.sidebar-logout a:hover {
     background-color: var(--secondary-color);
     border-radius: 50px;
 }
@@ -76,7 +79,9 @@ body {
     align-items: center;
 }
 
+
 /* will hide menu toggle first,this one will appear on mobile screen later*/
+
 .menu-toggle {
     display: none;
 }
@@ -121,7 +126,8 @@ body {
     gap: 0.5rem;
 }
 
-.cart, .user {
+.cart,
+.user {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +140,8 @@ body {
     border-radius: 50%;
 }
 
-.cart:hover, .user:hover {
+.cart:hover,
+.user:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -160,11 +167,13 @@ body {
     font-size: 24px;
 }
 
-.back, .next {
+.back,
+.next {
     cursor: pointer;
 }
 
-.back:hover, .next:hover {
+.back:hover,
+.next:hover {
     color: var(--primary-color);
 }
 
@@ -173,11 +182,11 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    display:flex;
+    display: flex;
     padding: 1%;
     border-radius: 8px;
     gap: 1.5rem;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .highlight-card {
@@ -198,8 +207,8 @@ overflow-x: hidden;
     object-fit: cover;
     object-position: center;
 }
- 
-.bick { 
+
+.bick {
     width: 100%;
     height: 100%;
     display: flex;
@@ -224,6 +233,7 @@ overflow-x: hidden;
     background-color: var(--whitecolor);
     box-shadow: rgba(176, 176, 176, 0.2) 0px 2px 8px 0px;
 }
+
 .main-menus {
     min-height: 100%;
     background-color: var(--greycolor);
@@ -240,11 +250,13 @@ overflow-x: hidden;
     gap: 1rem;
 }
 
-.back-menus, .next-menus {
+.back-menus,
+.next-menus {
     cursor: pointer;
 }
 
-.back-menus:hover, .next-menus:hover {
+.back-menus:hover,
+.next-menus:hover {
     color: var(--primary-color);
 }
 
@@ -272,7 +284,7 @@ overflow-x: hidden;
     border: 1px solid var(--softGreencolor);
     font-size: 14px;
     cursor: pointer;
-}    
+}
 
 .filter-icon {
     display: flex;
@@ -289,7 +301,7 @@ overflow-x: hidden;
 .filter-card:hover {
     background-color: var(--primary-color);
     color: var(--whitecolor);
-    transition: scaleX (1.1) ;
+    transition: scaleX (1.1);
 }
 
 .main-detail {
@@ -357,31 +369,29 @@ overflow-x: hidden;
 }
 
 .detail-card:hover .detail-name h4 {
-    color:var(--primary-color)
+    color: var(--primary-color)
 }
 
 .detail-card:hover .price {
     letter-spacing: 1.5px;
 }
 
+
 /* mobile view */
+
 @media screen and (max-width:640px) {
     .sidebar {
         display: none;
     }
-
     .main {
         margin-left: 0;
-        
     }
-
     .menu-toggle {
         display: block;
         text-decoration: none;
         font-size: 20px;
-        background:color: var(--whitecolor);
-        color: var(--primary-color)
-        display: flex;
+        background: color: var(--whitecolor);
+        color: var(--primary-color) display: flex;
         justify-content: center;
         align-items: center;
         padding: 0 10px;
@@ -389,7 +399,6 @@ overflow-x: hidden;
         border-radius: 50%;
         z-index: 3;
     }
-
     .sidebar.active {
         display: flex;
         z-index: 10;
