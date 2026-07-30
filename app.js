@@ -10,15 +10,15 @@ mobile.addEventListener("click", function() {
 // close menu when click
 mobileLink.addEventListener("click", function() {
     const menubars = document.querySelector("is-active");
-    if(window.innerWidth <= 768 && menubars) {
+    if (window.innerWidth <= 768 && menubars) {
         mobile.classList.toggle("active");
         mobileLink.classList.toggle("active");
     }
 })
 
 // move the menu to right and left when click back and naxt
-var step=100;
-var stepFilter=160;
+var step = 100;
+var stepFilter = 160;
 var scrolling = true;
 
 $(".back").bind("click", function() {
@@ -28,7 +28,7 @@ $(".back").bind("click", function() {
     });
 })
 
-$(".next").bind("click",function(e){
+$(".next").bind("click", function(e) {
     e.preventDefault();
     $(".highlight-wrapper").animate({
         scrollLeft: "+=" + step + "px"
@@ -44,16 +44,9 @@ $(".back-menus").bind("click", function() {
     })
 });
 
-$(".next-menus").bind("click",function(e){
+$(".next-menus").bind("click", function(e) {
     e.preventDefault();
     $(".filter-wrapper").animate({
         scrollLeft: "+=" + stepFilter + "px"
     })
 })
-
-
-
-
-
-
-
